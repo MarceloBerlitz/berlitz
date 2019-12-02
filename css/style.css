@@ -1,0 +1,92 @@
+* {
+    font-family: 'Tomorrow';
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1rem;
+}
+
+header ul li  {
+    margin: 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    height: 100%;
+}
+
+#home div {
+    color: white;
+    position: relative;
+    top: 18%;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+}
+
+#about {
+    background-color: #bbb;
+}
+
+#contact {
+    background-color: #fff;
+}
+
+.title-container {
+    background-image: url('../assets/laptop.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 40rem;
+    position: relative;
+    height: 20rem;
+}
+
+section {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
