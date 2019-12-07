@@ -38,6 +38,11 @@ header ul li a {
 }
 
 header ul li a:hover {
+    background-color: #00FF78;
+    color: inherit;
+}
+
+.active {
     text-decoration: underline;
 }
 
