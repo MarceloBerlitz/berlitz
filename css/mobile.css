@@ -11,4 +11,8 @@
         width: 20rem;
         height: 6rem;
     }
+
+    #contact-options {
+        margin: 0 3%;
+    }
 }

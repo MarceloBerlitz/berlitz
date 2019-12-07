@@ -139,3 +139,74 @@ section {
 .outlined {
     border: #00FF78 solid 2px;
 }
+
+.icon-github:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-size: cover;
+    margin-right: 1rem;
+    float: left;
+    background-image: url('../assets/icons/github.png');
+}
+
+.icon-linkedin:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-size: cover;
+    margin-right: 1rem;
+    float: left;
+    background-image: url('../assets/icons/linkedin.png');
+}
+
+.icon-instagram:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-size: cover;
+    margin-right: 1rem;
+    float: left;
+    background-image: url('../assets/icons/instagram.png');
+}
+
+#contact-options {
+    width: 17rem;
+    height: 16rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 6%;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-option {
+    height: 50px;
+    font-size: 2.5rem;
+    color: #00FF78;
+    margin-bottom: 2rem;
+}
+
+.contact-option a {
+    text-decoration: none;
+}
+
+.contact-option a:visited {
+    text-decoration: none;
+    color: #00FF78;
+}
+
+.contact-option a:hover {
+    color: #253033;
+    background-color: #00FF78;
+}
+
+.contact-option a:active {
+    color: #253033;
+    background-color: #00FF78;
+    text-decoration: underline;
+}
