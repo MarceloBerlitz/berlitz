@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40;
+    }
+    
+    h2 {
+        font-size: 30;
+    }
+
+    .title-container {
+        width: 20rem;
+        height: 6rem;
+    }
+}

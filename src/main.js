@@ -7,8 +7,10 @@ function start() {
     for(let i = 0; i < links.length; i++) {
         const link = links.item(i);
 
-        array.push(link);
+        if (i == 0) link.className = 'active';
 
+        array.push(link);
+        
         link.addEventListener('click', () => {
             array.forEach(element => {
                 if(element != link) {

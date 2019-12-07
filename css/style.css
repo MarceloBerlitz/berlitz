@@ -1,5 +1,5 @@
 * {
-    font-family: 'sans-serif'
+    font-family: 'Tomorrow', 'sans-serif'
 }
 
 body {
@@ -15,6 +15,7 @@ header {
     margin: 0;
     padding: 0;
     height: 0;
+    z-index: 5;
 }
 
 header ul {
@@ -42,6 +43,16 @@ header ul li a:hover {
     color: inherit;
 }
 
+.marked {
+    background-color: #00FF78;
+    color: #253033;
+    /* text-decoration: underline; */
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
 .active {
     text-decoration: underline;
 }
@@ -59,13 +70,13 @@ header ul li a:hover {
 
 h1 {
     font-weight: 100;
-    font-size: 40px;
+    font-size: 60;
     margin: 0;
 }
 
 h2 {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 46;
     margin: 0;
 }
 
@@ -82,11 +93,13 @@ h2 {
 }
 
 .title-container {
-    width: 20rem;
-    height: 6rem;
+    width: 36rem;
+    height: 8rem;
     margin: auto;
+    text-transform: none;
     top: 50%;
     transform: translateY(-50%);
+    /* text-decoration: underline; */
     /* background-image: url('../assets/laptop.png');
     background-repeat: no-repeat;
     background-position-x: center;
@@ -105,4 +118,24 @@ section {
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
+}
+
+#about img {
+    width: 18rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    float: right;
+    margin: 2rem;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    max-width: 1200px;
+}
+
+.outlined {
+    border: #00FF78 solid 2px;
 }
