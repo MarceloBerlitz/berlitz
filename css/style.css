@@ -1,5 +1,5 @@
 * {
-    font-family: 'Tomorrow';
+    font-family: 'sans-serif'
 }
 
 body {
@@ -19,9 +19,13 @@ header {
 
 header ul {
     display: flex;
+    padding: .5rem;
     flex-direction: row;
     list-style: none;
-    margin: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 1rem;
+    border-bottom: #00FF78 solid 2px;
 }
 
 header ul li  {
@@ -30,7 +34,7 @@ header ul li  {
 
 header ul li a {
     text-decoration: none;
-    color: black;
+    color: #00FF78;
 }
 
 header ul li a:hover {
@@ -42,11 +46,10 @@ header ul li a:hover {
 }
 
 #home div {
-    color: white;
+    color: #00FF78;
     position: relative;
-    top: 18%;
     text-align: center;
-    padding: 5rem 2rem;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -61,21 +64,29 @@ h2 {
     margin: 0;
 }
 
+#home {
+    background-color: #253033;
+}
+
 #about {
-    background-color: #bbb;
+    background-color: #2A3538;
 }
 
 #contact {
-    background-color: #fff;
+    background-color: #253033;
 }
 
 .title-container {
-    background-image: url('../assets/laptop.png');
+    width: 20rem;
+    height: 6rem;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-image: url('../assets/laptop.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 40rem;
-    position: relative;
-    height: 20rem;
+    /* position: relative; */
 }
 
 section {
