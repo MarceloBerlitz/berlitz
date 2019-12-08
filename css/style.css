@@ -70,13 +70,13 @@ header ul li a:hover {
 
 h1 {
     font-weight: 100;
-    font-size: 60;
+    font-size: 60px;
     margin: 0;
 }
 
 h2 {
     font-weight: 100;
-    font-size: 46;
+    font-size: 46px;
     margin: 0;
 }
 
@@ -193,6 +193,7 @@ section {
 
 .contact-option a {
     text-decoration: none;
+    color: #00FF78;
 }
 
 .contact-option a:visited {
