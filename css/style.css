@@ -115,19 +115,20 @@ section {
 
 #about img {
     width: 20%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 1rem;
-    float: right;
-    margin: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
 }
 
 .container {
-    height: 100%;
+    height: 30rem;
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .outlined {
@@ -173,7 +174,6 @@ section {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0 6%;
     padding: 0;
     list-style: none;
 }
@@ -204,4 +204,14 @@ section {
     color: #253033;
     background-color: #00FF78;
     text-decoration: underline;
+}
+
+#about-text {
+    width: 70%;
+    color: #00FF78;
+}
+
+#about-text h1 {
+    color: #253033;
+    background-color: #00FF78;
 }
