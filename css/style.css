@@ -46,7 +46,6 @@ header ul li a:hover {
 .marked {
     background-color: #00FF78;
     color: #253033;
-    /* text-decoration: underline; */
 }
 
 .underlined {
@@ -99,12 +98,6 @@ h2 {
     text-transform: none;
     top: 50%;
     transform: translateY(-50%);
-    /* text-decoration: underline; */
-    /* background-image: url('../assets/laptop.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 40rem;
-    /* position: relative; */
 }
 
 section {
@@ -121,7 +114,7 @@ section {
 }
 
 #about img {
-    width: 18rem;
+    width: 20%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -134,6 +127,7 @@ section {
     height: 100%;
     position: relative;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .outlined {
