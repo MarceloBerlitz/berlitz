@@ -4,7 +4,7 @@
     }
     
     h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .title-container {
@@ -24,5 +24,13 @@
         width: 100%;
     }
 
+    .terminal {
+        font-size: 1.4rem;
+    }
 
+    .terminal:after {
+        width: .4rem;
+        height: 1.4rem;
+        margin-bottom: -0.2rem;
+    }
 }

@@ -36,11 +36,39 @@ header ul li  {
 header ul li a {
     text-decoration: none;
     color: #00FF78;
+    width: 4rem;
+    display: block;
+    position: relative;
+    transition: all .35s;
+}
+
+header ul li a span {
+    position: relative;
+    z-index: 10;
+}
+
+header ul li a:before {
+    content: '';
+    text-decoration: none;
+    background-color: #00FF78;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .35s;
+    position: absolute;
 }
 
 header ul li a:hover {
+    color: #253033;
+    float: right;
+}
+
+header ul li a:hover:before {
     background-color: #00FF78;
-    color: inherit;
+    margin-right: -4rem;
+    width: 4rem;
 }
 
 .marked {
@@ -75,7 +103,7 @@ h1 {
 
 h2 {
     font-weight: 100;
-    font-size: 46px;
+    font-size: 42px;
     margin: 0;
 }
 
@@ -188,6 +216,26 @@ section {
 .contact-option a {
     text-decoration: none;
     color: #00FF78;
+    display: block;
+    width: 18rem;
+    height: 3.4rem;
+    transition: all .35s;
+}
+
+.contact-option a span {
+    position: relative;
+    z-index: 10;
+}
+
+.contact-option a:before {
+    content: '';
+    background-color: #00FF78;
+    display: block;
+    left: 4rem;
+    width: 0;
+    height: 3.2rem;
+    transition: all .35s;
+    position: absolute;
 }
 
 .contact-option a:visited {
@@ -197,12 +245,15 @@ section {
 
 .contact-option a:hover {
     color: #253033;
+}
+
+.contact-option a:hover:before {
     background-color: #00FF78;
+    width: 14rem;
 }
 
 .contact-option a:active {
     color: #253033;
-    background-color: #00FF78;
     text-decoration: underline;
 }
 
@@ -214,4 +265,31 @@ section {
 #about-text h1 {
     color: #253033;
     background-color: #00FF78;
+}
+
+.terminal {
+    font-size: 2rem;
+}
+
+.terminal:after {
+    content: '';
+    display: inline-block;
+    width: .6rem;
+    height: 2rem;
+    margin-left: .4rem;
+    margin-bottom: -0.3rem;
+    background-color: #00FF78;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
