@@ -1,58 +1,335 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marcelo Berlitz — Software Engineer, developer and technology enthusiast.">
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <title>berlitz</title>
+    <title>marcelo berlitz — software engineer</title>
 </head>
 
 <body>
-<header>
-    <ul id="menu">
-        <li><a href="#home"><span>home</span></a></li>
-        <li><a href="#contact"><span>contact</span></a></li>
-    </ul>
-</header>
-<section>
-    <div id="home" class="page">
-        <div class="title-container">
-            <h1><span class="marked">marcelo</span> <span class="marked">berlitz</span></h1>
-            <h2><span class="underlined">software</span> <span class="underlined">developer</span><span class="terminal"> ></span></h2>
-        </div>
-    </div>
-    <div id="contact" class="page">
-        <div class="container">
-            <ul id="contact-options">
-                <li class="contact-option">
-                    <a target="_blank" href="https://github.com/MarceloBerlitz">
-                            <span class="icon-github">
-                                GitHub
-                            </span>
-                    </a>
-                </li>
-                <li class="contact-option">
-                    <a target="_blank" href="https://www.linkedin.com/in/marcelo-berlitz-b70222112/">
-                            <span class="icon-linkedin">
-                                LinkedIn
-                            </span>
-                    </a>
-                </li>
-                <li class="contact-option">
-                    <a target="_blank" href="https://www.instagram.com/MarceloBerlitz/">
-                            <span class="icon-instagram">
-                                Instagram
-                            </span>
-                    </a>
-                </li>
+    <header>
+        <nav class="nav">
+            <a class="nav-brand" href="#home">berlitz.dev</a>
+            <ul id="menu">
+                <li><a href="#home"><span>home</span></a></li>
+                <li><a href="#about"><span>about</span></a></li>
+                <li><a href="#experience"><span>experience</span></a></li>
+                <li><a href="#skills"><span>toolbox</span></a></li>
+                <li><a href="#projects"><span>projects</span></a></li>
+                <li><a href="#contact"><span>contact</span></a></li>
             </ul>
-        </div>
-    </div>
-</section>
-<script src="src/main.js"></script>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page home-page">
+            <div class="home-grid">
+                <div class="home-copy reveal">
+                    <div class="eyebrow">$ whoami</div>
+                    <h1><span class="marked">marcelo</span> <span class="marked">berlitz</span></h1>
+                    <h2><span class="underlined">software</span> <span class="underlined">engineer</span><span
+                            class="terminal"> ></span></h2>
+                    <p class="intro">
+                        <span data-years-since="2011-01-01">15+</span> years curious about programming.<br>
+                        <span data-years-since="2018-07-01">8+</span> years building software professionally.
+                    </p>
+                    <div class="home-actions">
+                        <a class="button" href="#about">./about</a>
+                        <a class="button button-ghost" href="#projects">./projects</a>
+                    </div>
+                </div>
+
+                <div class="terminal-window reveal delay-1" aria-label="Profile summary">
+                    <div class="terminal-bar">
+                        <span></span><span></span><span></span>
+                        <strong>marcelo@berlitz:~</strong>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> cat profile.txt</p>
+                        <p class="terminal-muted">software engineer</p>
+                        <p class="terminal-muted">front-end / back-end / mobile</p>
+                        <p class="terminal-muted">always open to a new challenge</p>
+                        <p><span class="prompt">$</span> <span class="cursor"></span></p>
+                    </div>
+                </div>
+            </div>
+            <a class="scroll-hint" href="#about">scroll_down ↓</a>
+        </section>
+
+        <section id="about" class="page content-page">
+            <div class="content-wrap">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <span class="eyebrow">about_me</span>
+                        <h2>More than just code.</h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p class="lead">
+                            I've been interested in programming for <span data-years-since="2011-01-01">15+</span>
+                            years,
+                            and I've been working professionally with software for <span
+                                data-years-since="2018-07-01">8+</span> years.
+                        </p>
+                        <p>
+                            Along the way, I've worked across different parts of the stack:
+                            front-end applications with Angular and React, back-end systems
+                            with Java and Spring Boot, Node.js and .NET, plus some Android
+                            development.
+                        </p>
+                        <p>
+                            I enjoy understanding how things work, building useful solutions
+                            and learning whatever technology a problem demands. I'm comfortable
+                            with what I already know — but I don't say no to a different challenge.
+                        </p>
+                    </div>
+
+                    <div class="fact-panel">
+                        <div class="fact">
+                            <span class="fact-value" data-years-since="2011-01-01">15+</span>
+                            <span class="fact-label">years interested in programming</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-value" data-years-since="2018-07-01">8+</span>
+                            <span class="fact-label">years working professionally</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-value">∞</span>
+                            <span class="fact-label">curiosity for new technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="page content-page darker">
+            <div class="content-wrap">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <div>
+                        <span class="eyebrow">experience</span>
+                        <h2>A timeline in software.</h2>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item current">
+                        <div class="timeline-date">AUG 2025 — NOW</div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <h4>Getnet</h4>
+                            <p>Building software in a large-scale payments environment.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">MAY 2021 — JUL 2025</div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <h4>Datum</h4>
+                            <p>Software development working with Getnet / PagoNxt Merchant Solutions.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">JUN 2020 — MAY 2021</div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <h4>UPPER Data Software</h4>
+                            <p>Software development in Porto Alegre.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">JUL 2018 — JUN 2020</div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Full Stack Developer</h3>
+                            <h4>Grupo Dimed</h4>
+                            <p>Development across front-end and back-end applications.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item early">
+                        <div class="timeline-date">MAY 2014 — JUN 2016</div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>IT Intern → IT Technician</h3>
+                            <h4>Fibraplac</h4>
+                            <p>Where the professional chapter of my technology journey started.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="page content-page">
+            <div class="content-wrap">
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <div>
+                        <span class="eyebrow">toolbox</span>
+                        <h2>Technologies I work with.</h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="card-index">01</span>
+                        <h3>Frontend</h3>
+                        <p>Angular · React</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="card-index">02</span>
+                        <h3>Backend</h3>
+                        <p>Java · Spring Boot · Node.js · .NET</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="card-index">03</span>
+                        <h3>Mobile</h3>
+                        <p>Android</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="card-index">04</span>
+                        <h3>Mindset</h3>
+                        <p>Curiosity · problem solving · new challenges</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page content-page darker">
+            <div class="content-wrap">
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <div>
+                        <span class="eyebrow">selected_projects</span>
+                        <h2>Things I've built.</h2>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured">
+                        <div class="project-image-frame">
+                            <img src="assets/projects/turtle.png" alt="Turtle Infinity Runner game" loading="lazy">
+                        </div>
+                        <div class="project-top">
+                            <span class="project-number">01</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3>Turtle Life</h3>
+                        <p>
+                            An Infinity Runner made with Unity. A sea turtle tries to survive
+                            pollution and predators in a hostile ocean.
+                        </p>
+                        <div class="project-actions">
+                            <a class="project-link" href="https://turtle.berlitz.dev/" target="_blank" rel="noopener">↗
+                                Open project</a>
+                            <span class="project-link project-link-muted">no public repository</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-frame">
+                            <img src="assets/projects/easy-estimate.png" alt="Easy Estimate application" loading="lazy">
+                        </div>
+                        <div class="project-top">
+                            <span class="project-number">02</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3>Easy Estimate</h3>
+                        <p>
+                            A planning tool that helps choose an estimate based on three
+                            factors, turning a subjective decision into a simple visual process.
+                        </p>
+                        <div class="project-actions">
+                            <a class="project-link" href="https://estimate.berlitz.dev/" target="_blank"
+                                rel="noopener">↗ Open project</a>
+                            <a class="project-link" href="https://github.com/MarceloBerlitz/easy-estimate"
+                                target="_blank" rel="noopener">⌘ Repository</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-frame">
+                            <img src="assets/projects/dots-online.png" alt="Dots Online game" loading="lazy">
+                        </div>
+                        <div class="project-top">
+                            <span class="project-number">03</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3>Dots Online</h3>
+                        <p>
+                            An online version of the classic dots game, built with React
+                            and Socket.IO for real-time interaction.
+                        </p>
+                        <div class="project-actions">
+                            <a class="project-link" href="https://dots.berlitz.dev/" target="_blank" rel="noopener">↗
+                                Open project</a>
+                            <a class="project-link" href="https://github.com/MarceloBerlitz/dots-online" target="_blank"
+                                rel="noopener">⌘ Repository</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page contact-page">
+            <div class="content-wrap contact-wrap">
+                <div class="section-heading">
+                    <span class="section-number">05</span>
+                    <div>
+                        <span class="eyebrow">contact</span>
+                        <h2>Let's connect.</h2>
+                    </div>
+                </div>
+
+                <p class="contact-lead">
+                    Find me around the web, check out what I'm building,
+                    or just say hello.
+                </p>
+
+                <ul id="contact-options">
+                    <li class="contact-option">
+                        <a target="_blank" rel="noopener" href="https://github.com/MarceloBerlitz">
+                            <span class="icon-github"></span>
+                            GitHub
+                        </a>
+                    </li>
+                    <li class="contact-option">
+                        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/marcelo-berlitz-b70222112/">
+                            <span class="icon-linkedin"></span>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="contact-option">
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/MarceloBerlitz/">
+                            <span class="icon-instagram"></span>
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-line">
+                    <span>© <span id="year"></span> berlitz.dev</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/main.js"></script>
 </body>
 
 </html>
